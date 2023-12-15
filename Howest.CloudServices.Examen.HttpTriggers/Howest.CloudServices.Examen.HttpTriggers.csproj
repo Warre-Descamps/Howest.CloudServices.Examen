@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <AzureFunctionsVersion>v4</AzureFunctionsVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Azure.Data.Tables" Version="12.8.2" />
+        <PackageReference Include="Microsoft.Azure.Devices" Version="1.39.1" />
+        <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="4.2.0"/>
+        <PackageReference Include="System.Linq.Async" Version="6.0.1" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Update="host.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="local.settings.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+        </None>
+        <None Update="template.local.settings.json">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+          <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+        </None>
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\Howest.CloudServices.Examen.Helpers\Howest.CloudServices.Examen.Helpers.csproj" />
+      <ProjectReference Include="..\Howest.CloudServices.Examen.Models\Howest.CloudServices.Examen.Models.csproj" />
+      <ProjectReference Include="..\Howest.Mct.Functions.CosmosDb.Helper\Howest.Mct.Functions.CosmosDb.Helper.csproj" />
+    </ItemGroup>
+</Project>

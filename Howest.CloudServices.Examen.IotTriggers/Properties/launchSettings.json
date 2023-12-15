@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Howest.CloudServices.Examen.IotHubTriggers": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7151",
+      "launchBrowser": false
+    }
+  }
+}

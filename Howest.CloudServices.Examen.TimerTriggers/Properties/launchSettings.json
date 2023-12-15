@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Howest.CloudServices.Examen.TimerTriggers": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7172",
+      "launchBrowser": false
+    }
+  }
+}

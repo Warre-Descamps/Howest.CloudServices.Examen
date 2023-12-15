@@ -1,0 +1,14 @@
+{
+    "IsEncrypted": false,
+    "Values": {
+        "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+        "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+        "TableName": "",
+        "PartitionKey": "",
+        "ConnectionString": "",
+        "IotHubAdmin": "",
+        "CosmosConnectionString": "",
+        "CosmosDatabase": "",
+        "CosmosContainer": ""
+    }
+}
